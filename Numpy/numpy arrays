@@ -1,3 +1,5 @@
+import numpy as np
+
 my_list = [1,2,3]
 #creates numpy array through the list crated 
 x = np.array(my_list)
