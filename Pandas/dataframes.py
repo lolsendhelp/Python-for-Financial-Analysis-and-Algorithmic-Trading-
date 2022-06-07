@@ -20,6 +20,17 @@ print(df[["W","Z"]])
 time.sleep(2)
 os.system('cls')
 
+#requests row A from the data frame
+df.loc["A"]
+
+time.sleep(2)
+os.system('cls')
+
+df.iloc[2]
+
+time.sleep(2)
+os.system('cls')
+
 #makes a new column in the data frame
 df['new'] = randn(5,1)
 print(df)
@@ -33,3 +44,18 @@ os.system('cls')
 #inplace means it will change the actual dataframe 
 df.drop("new", axis=1,inplace=True)
 print(df)
+
+time.sleep(2)
+os.system('cls')
+
+#deletes the E row of the dataframe 
+df.drop("E",inplace=True)
+print(df)
+
+#finds a specific piece of data in the data frame 
+print(df.loc['B','Y'])
+
+time.sleep(2)
+os.system('cls')
+
+print(df.loc[["A", "B"], ["W", "Y"]])
